@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+header nav {
+  margin: 4% 0;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+  @media @mobile {
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  @media @mobile {
+    padding-top: 4.85rem;
+  }
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  margin: 24px 300px 0 0;
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    position: absolute;
+    margin: 6% 38% !important;
+  }
+}
