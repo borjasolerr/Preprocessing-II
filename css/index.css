@@ -178,6 +178,9 @@ img {
     padding: 0 3rem;
   }
 }
+hr {
+  border-style: dashed;
+}
 header nav {
   margin: 4% 0;
   width: 610px;
@@ -186,9 +189,9 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 header nav a {
@@ -199,7 +202,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   header nav a {
-    padding-top: 0.75rem;
+    padding-top: 0.85rem;
   }
 }
 header nav a:hover {
