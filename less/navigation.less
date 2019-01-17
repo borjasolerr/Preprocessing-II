@@ -5,6 +5,11 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  @media @mobile {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+  }
 }
 
 header nav a {
@@ -12,21 +17,12 @@ header nav a {
   color: black;
   font-size: 1.4rem;
   font-weight: 600;
+  @media @mobile {
+    padding-top: 0.75rem;
+  }
 }
 
 header nav a:hover {
   text-decoration: underline;
   color: black;
-}
-
-// media queries for .nav
-@media screen and (max-width: 500px) {
-  header nav {
-    font-size: 1rem;
-  }
-  header nav a {
-    a {
-      font-size: 1rem;
-    }
-  }
 }
